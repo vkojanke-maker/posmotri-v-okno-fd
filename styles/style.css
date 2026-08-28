@@ -174,7 +174,7 @@ ol {
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 16.2px;
+  line-height: 0.9;
   letter-spacing: 0%;
   display: -webkit-box;
   -webkit-line-clamp: 4;   
@@ -230,6 +230,7 @@ ol {
 
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
+  outline-offset: 1px;
   }
 
 .search-form__pseudo-checkbox {
@@ -254,7 +255,7 @@ ol {
   opacity: 1;
 }
 
-.search-form__label:hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
   text-underline-offset: 2px;
   text-decoration-thickness: 1px;
